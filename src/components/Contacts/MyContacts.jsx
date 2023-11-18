@@ -1,15 +1,15 @@
 import { nanoid } from 'nanoid';
 import { Component } from 'react';
 
-import MyContactForm from '../MyContactForm/MyContactForm';
-import MyContactList from '../ContactList/ContactList';
-import MyContactsFilter from '../MyContactsFilter/MyContactsFilter';
+import MyContactForm from 'components/MyContactForm/MyContactForm';
+import MyContactList from 'components/ContactList/ContactList';
+import MyContactsFilter from 'components/MyContactsFilter/MyContactsFilter';
 
 import css from './MyContacts.module.css';
 
 class MyContacts extends Component {
     state = {
-        contats: [
+        contacts: [
             { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
             { id: 'id-2', name: 'Hermione Kline', number: '443-89-12' },
             { id: 'id-3', name: 'Eden Clements', number: '645-17-79' },
@@ -20,7 +20,7 @@ class MyContacts extends Component {
 
     addContact = ({ name, number }) => {
         if (this.isDuplicate(name)) {
-            return alert('${name} is already in your contacts');
+            return alert(`${name} is already in your contacts`);
         }
 
         this.setState(prevState => {

@@ -2,12 +2,18 @@ import PropTypes from 'prop-types';
 import css from './ContactList.module.css';
 
 const MyContactList = ({ contacts, removeContact }) => {
+
+ if (!contacts) {
+   return null; // lub inny sposób obsługi braku danych
+ }
+
+
     const names = contacts.map(({ id, name, number }) => (
         <li key={id}>
             {name} : {number}
             <button
                 className={css.button}
-                onClic={() => removeContact(id)}
+                onClick={() => removeContact(id)}
                 type="button" >
                 Delete
             </button>
