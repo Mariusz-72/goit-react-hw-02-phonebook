@@ -1,0 +1,22 @@
+.phonebook_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.phonebook_form {
+  display: grid;
+  justify-items: start;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 200px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: rgba(40, 170, 23, 0.822);
+  color: rgb(112, 148, 179);
+}
