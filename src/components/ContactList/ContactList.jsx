@@ -9,15 +9,18 @@ const MyContactList = ({ contacts, removeContact }) => {
 
 
     const names = contacts.map(({ id, name, number }) => (
-        <li key={id}>
-            {name} : {number}
-            <button
-                className={css.button}
-                onClick={() => removeContact(id)}
-                type="button" >
-                Delete
-            </button>
-        </li>
+      <li className={css.list_item} key={id}>
+        <p>{name}</p>
+        <p>:</p>
+        <p>{number}</p>
+        <button
+          className={css.button}
+          onClick={() => removeContact(id)}
+          type="button"
+        >
+          Delete
+        </button>
+      </li>
     ));
 
     return (

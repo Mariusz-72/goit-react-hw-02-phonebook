@@ -77,16 +77,23 @@ class MyContacts extends Component {
             const contacts = this.getFilteredContacts();
 
             return (
-                <div>
-                    <h2 className={css.title}>Phonebook</h2>
-                    <MyContactForm onSubmit={addContact} />
-                    <MyContactsFilter
-                        handleChange={handleFilter}
-                        value={this.state.filter}
-                    />
-                    <h2 className={css.title}>Contacts</h2>
-                    <MyContactList removeContact={removeContact} contacts={contacts} />
+              <div>
+                <div className={css.phone_part}>
+                  <h2 className={css.title}>Phonebook</h2>
+                  <MyContactForm onSubmit={addContact} />
+                  <MyContactsFilter
+                    handleChange={handleFilter}
+                    value={this.state.filter}
+                  />
                 </div>
+                <div className={css.contacts_list}>
+                  <h2 className={css.title}>Contacts</h2>
+                  <MyContactList
+                    removeContact={removeContact}
+                    contacts={contacts}
+                  />
+                </div>
+              </div>
             );
         }
     }

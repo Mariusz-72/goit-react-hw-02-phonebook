@@ -4,7 +4,7 @@ import css from './MyContactsFilter.module.css';
 const MyContactsFilter = ({ handleChange, value }) => {
     return (
         <div className={css.filter_wrap}>
-            <label>Find contact by name :</label>
+            <label >Find contact by name :</label>
             <input
                 className={css.input}
                 onChange={handleChange}
