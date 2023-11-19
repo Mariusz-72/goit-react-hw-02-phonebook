@@ -12,6 +12,7 @@
     line-height: 26px;
     background-color: rgb(142, 240, 240);
     border-radius: 3px;
+    box-shadow: 1px 1px 1px grey;
 }
 
 .contact_items {
@@ -26,6 +27,7 @@
     text-align: center;
     background-color: rgb(107, 167, 224);
     border-radius: 10px;
+    box-shadow: 3px 3px 3px grey;
     
 }
 

@@ -13,6 +13,7 @@
     background-color: rgb(100, 148, 238);
     border-radius: 10px;
     background-color: rgb(135, 210, 223);
+    box-shadow: 3px 3px 3px grey;
 }
 
 .title {
@@ -30,8 +31,7 @@
     background-color: rgb(106, 151, 235);
     border-radius: 10px;
     background-color: rgb(13, 85, 40);
+    box-shadow: 3px 3px 3px grey;
 }
 
-.contact_list {
-    background-color: chartreuse;
-}
+
